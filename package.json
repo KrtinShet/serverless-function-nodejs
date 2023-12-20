@@ -1,0 +1,28 @@
+{
+  "name": "skyfunction",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:client": "cd client && npm run build",
+    "start": "npm run build:client && node index.js",
+    "start:dev": "npm run build:client && nodemon index.js",
+    "postinstall": "cd client && npm install"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "file-system-db": "^2.0.0",
+    "isolated-vm": "^4.6.0",
+    "minimum-db": "^1.1.1",
+    "uuid": "^9.0.1",
+    "vantedb": "^3.5.4",
+    "vm": "^0.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
