@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "preinstall": "npm install",
-    "install": "cd client && npm install",
+    "preinstall": "cd client && npm install",
     "start": "node index.js",
     "start:dev": "nodemon index.js",
     "postinstall": "cd client && npm run build"
