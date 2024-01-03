@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:client": "cd client && npm run build",
-    "start": "npm run build:client && node index.js",
-    "start:dev": "npm run build:client && nodemon index.js",
-    "postinstall": "cd client && npm install"
+    "preinstall": "npm install",
+    "install": "cd client && npm install",
+    "start": "node index.js",
+    "start:dev": "nodemon index.js",
+    "postinstall": "cd client && npm run build"
   },
   "author": "",
   "license": "ISC",
